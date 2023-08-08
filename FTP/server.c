@@ -41,7 +41,7 @@ int main(){
         char buffer[100];
         for(int i=0;i<100;i++){
             
-            buffer[i] = fgetc(fp);
+            buffer[i] = fgetc(fp)^'S';
            
         }
 

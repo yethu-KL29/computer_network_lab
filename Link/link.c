@@ -13,7 +13,7 @@ void shortest_path(int n, int cost[n][n], int src) {
     int u;
 
     for (int i = 0; i < n; i++) {
-        distance[i] = 10000;
+        distance[i] = 100000;
         visited[i] = 0;
         previous[i] = src;
     }
@@ -44,6 +44,8 @@ void shortest_path(int n, int cost[n][n], int src) {
 
 int main() {
     int n;
+
+
     printf("enter the number of nodes: ");
     scanf("%d", &n);
 

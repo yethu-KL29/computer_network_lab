@@ -40,7 +40,7 @@ int main(){
             if(buffer1[i] == EOF){
                 break;
             }
-            printf("%c",buffer1[i]);
+            printf("%c",buffer1[i]^'S');
         }
 
 
