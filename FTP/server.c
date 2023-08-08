@@ -39,7 +39,11 @@ int main(){
         }
 
         char buffer[100];
-        for(int i=0;i<100;i++){
+        for(int i=0;i<1000;i++){
+            if(fgetc(fp) == EOF){
+    
+                break;
+            }
             
             buffer[i] = fgetc(fp)^'S';
            
