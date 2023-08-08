@@ -38,7 +38,10 @@ void shortest_path(int n, int cost[n][n], int src) {
     }
 
     for (int i = 0; i < n; i++) {
+        if(i!=src){
         printf("distance of %d from %d is %d\n", i + 1, src + 1, distance[i]);
+
+        }
     }
 }
 

@@ -23,6 +23,8 @@ int main(){
     client.sin_addr.s_addr = INADDR_ANY;
     client.sin_port = htons(6000);
 
+
+
     socklen_t len = sizeof(client);
 
     while(1){
